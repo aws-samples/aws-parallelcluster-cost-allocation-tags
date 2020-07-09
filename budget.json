@@ -1,13 +1,13 @@
 {
     "BudgetLimit": {
-        "Amount": "1",
+        "Amount": "<amount>",
         "Unit": "USD"
     },
-    "BudgetName": "ProjectA",
+    "BudgetName": "<project_name>",
     "BudgetType": "COST",
     "CostFilters": {
         "TagKeyValue": [
-            "user:aws-parallelcluster-project$ProjectA"
+            "user:aws-parallelcluster-project$<project_name>"
         ]
     },
     "CostTypes": {
