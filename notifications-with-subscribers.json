@@ -8,7 +8,7 @@
         },
         "Subscribers": [
             {
-                "Address": "email@example.com",
+                "Address": "<email>",
                 "SubscriptionType": "EMAIL"
             }
         ]
