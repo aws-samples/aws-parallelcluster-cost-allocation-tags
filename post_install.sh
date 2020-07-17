@@ -14,6 +14,8 @@
 # OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 # SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
+# The script configures the Slurm cluster after the deployment. Replace <bucket> with your bucket name.
+
 . "/etc/parallelcluster/cfnconfig"
 
 bucket="<bucket>"
