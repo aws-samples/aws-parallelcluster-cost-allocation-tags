@@ -14,6 +14,8 @@
 # OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 # SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
+# The script is used as wrapper to the Slurm sbatch command. Replace <account_id> with the id of your account.
+
 parameters=$@
 
 #enable or disable the budget checks for the projects
