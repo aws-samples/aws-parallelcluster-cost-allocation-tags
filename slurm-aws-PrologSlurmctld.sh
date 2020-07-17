@@ -15,6 +15,9 @@
 # OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 # SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
+
+# The script assigns the required tags to the EC2 instances of the jobs.
+
 #slurm directory
 export SLURM_ROOT=/opt/slurm
 
