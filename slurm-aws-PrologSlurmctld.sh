@@ -23,6 +23,9 @@ export SLURM_ROOT=/opt/slurm
 
 AWS_DEFAULT_REGION=$(curl -sS http://169.254.169.254/latest/dynamic/instance-identity/document | grep region | awk '{print $3}' | sed 's/"//g' | sed 's/,//g')
 
+# wait until route53 is updated
+sleep 10
+
 #function used to convert the hostname to ip
 function nametoip()
 {
