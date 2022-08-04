@@ -30,12 +30,12 @@ Scheduling:
       CustomActions:
         OnNodeConfigured:
           Script: s3://<bucket>/post_install.sh
-        AdditionalIamPolicies:
-          - Policy: arn:aws:iam::<account_id>:policy/pclusterTagsAndBudget
       Iam:
         S3Access:
           - BucketName: <bucket>
             EnableWriteAccess: False
+        AdditionalIamPolicies:
+          - Policy: arn:aws:iam::<account_id>:policy/pclusterTagsAndBudget
 Tags:
   - Key: aws-parallelcluster-username
     Value: NA
