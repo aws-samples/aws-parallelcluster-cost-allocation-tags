@@ -21,7 +21,9 @@ parameters=$@
 #enable or disable the budget checks for the projects
 budget="no"
 
-project=$(echo $@ | sed -n -e 's/.*comment //p' | awk '{print $1}')
+if [ -z "${project}" ];then
+  export project=$(echo $@ | sed -n -e 's/.*comment //p' | awk '{print $1}')
+fi
 slurm_command=$(basename "$0")
 
 if [ -z "${project}" ];then
@@ -48,7 +50,7 @@ if [ $? -eq 0 ];then
        fi
      fi
   else
-    /opt/slurm/sbin/${slurm_command} $@
+    /opt/slurm/sbin/${slurm_command} --export=ALL $@
   fi
 else
  echo "You are not allowed to use the project ${project}"
